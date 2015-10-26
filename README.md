@@ -1,0 +1,2 @@
+# Notes
+example angularJS application
