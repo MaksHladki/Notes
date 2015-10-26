@@ -1,0 +1,20 @@
+﻿body {
+    min-height: 768px;
+}
+
+.loading-spiner-holder {
+    position: relative;
+}
+
+    .loading-spiner-holder > .loading-spiner {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+
+        .loading-spiner-holder > .loading-spiner > img {
+            height: 100px;
+            width: 100px;
+        }

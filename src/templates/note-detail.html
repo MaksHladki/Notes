@@ -1,0 +1,19 @@
+﻿<div>
+    <h1>{{'Details'| translate}}:</h1>
+    <table class="table table-striped table-responsive">
+        <tbody>
+            <tr>
+                <td><b>{{'Id' | translate}}:</b></td>
+                <td>{{note.id}}</td>
+            </tr>
+            <tr>
+                <td><b>{{'Title' | translate}}:</b></td>
+                <td>{{note.title}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-default" ng-click="cancel()">{{'Cancel' | translate}}</button>
+    <button type="button" class="btn btn-primary" ng-click="editNote(note.id)">{{'Edit' | translate}}</button>
+    <button type="button" class="btn btn-danger">{{'Delete' | translate}}</button>
+    
+</div>

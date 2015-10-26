@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="noteApp">
+<head>
+    <title>Notes</title>
+	
+	<!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="contents/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="contents/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="contents/css/site.css" />
+	<!-- endbuild -->
+</head>
+<body role="document" ng-controller="mainController">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/note-list">{{'AppTitle' | translate}}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/note-list">{{'Notes' | translate}}</a></li> <!-- class="active" -->
+                    <li><a href="#/note-create">{{'Create' | translate}}</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{'Language'|translate}} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" ng-click="changeLanguage('en')">{{'English'|translate}}</a></li>
+                            <li><a href="" ng-click="changeLanguage('ru')">{{'Russian'|translate}}</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" role="main">
+        <ng-view></ng-view>
+    </div>
+    
+    <div class="loading-spiner-holder" data-loading><div class="loading-spiner"><img src="contents/img/loader.gif" /></div></div>
+
+    <script src="scripts/js/jquery.min.js"></script>
+    <script src="scripts/js/bootstrap.min.js"></script>
+    <script src="scripts/js/angular.min.js"></script>
+    <script src="scripts/js/angular-resource.min.js"></script>
+    <script src="scripts/js/angular-route.min.js"></script>
+    <script src="scripts/js/angular-translate.min.js"></script>
+    <script src="scripts/js/Scope.SafeApply.min.js"></script>
+    <script src="scripts/js/app.js"></script>
+    <script src="scripts/services/dataService.js"></script>
+    <script src="scripts/controllers/mainController.js"></script>
+    <script src="scripts/controllers/noteControllers.js"></script>
+    <script src="scripts/js/bootbox.min.js"></script>
+
+</body>
+</html>
