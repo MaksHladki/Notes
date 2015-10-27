@@ -34,7 +34,7 @@ npm i -g gulp
 
 5) install packages
 ```sh
-npm i --save gulp-connect gulp-concat-css gulp-minify-css gulp-autoprefixer gulp-minify-html gulp-uglify gulp-imagemin imagemin-pngquant gulp-html-replace
+npm i gulp-connect gulp-concat-css gulp-minify-css gulp-autoprefixer gulp-minify-html gulp-uglify gulp-imagemin imagemin-pngquant gulp-html-replace --save-dev
 ```
 
 6) Run the command 
